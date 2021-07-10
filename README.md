@@ -17,14 +17,14 @@
 ## 1：Xray
 
 ### 代理协议：vless+ws+tls 或 vmess+ws+tls
-* 服务器地址：自选ip（如：icook.tw）
+* 服务器地址：自选ip（如：icook.tw）或者：应用程序名.herokuapp.com
 * 端口：443
 * 默认UUID：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码)
 * 加密：none
 * 传输协议：ws
 * 伪装类型：none
-* 伪装host：****.workers.dev(CF Workers反代地址)
-* SNI地址：****.workers.dev(CF Workers反代地址)
+* 伪装host：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
+* SNI地址：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
 * path路径：/自定义UUID码-vless 或 /自定义UUID码-vmess    (注意：前有斜杠/)
 * vmess额外id（alterid）：0
 * 底层传输安全：tls
@@ -32,13 +32,13 @@
 
 ## 2：Trojan-Go+ws
 
-* 服务器地址：自选ip（如：icook.tw）
+* 服务器地址：自选ip（如：icook.tw）或者：应用程序名.herokuapp.com
 * 端口：443
 * 密码：8f91b6a0-e8ee-11ea-adc1-0242ac120002   (务必创建时自定义UUID码) 
 * 传输协议：ws
 * path路径：/自定义UUID码-trojan  (注意：前有斜杠/)
-* SNI地址：****.workers.dev(CF Workers反代地址)
-* 伪装host：****.workers.dev(CF Workers反代地址)
+* SNI地址：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
+* 伪装host：****.workers.dev(CF Workers反代地址)或者：应用程序名.herokuapp.com
 
 ## 3：Shadowsocks+ws+tls
 
